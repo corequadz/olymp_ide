@@ -3,7 +3,7 @@
 #include <filesystem>
 
 
-ExecutionConfig PythonConnector::prepare(const std::filesystem::path& sourcePath) {
+ExecutionConfig CppConnector::prepare(const std::filesystem::path& sourcePath) {
     ExecutionConfig config;
     config.RunCommand = "python3 " + sourcePath.string() + " 2>&1";
 

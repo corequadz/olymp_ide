@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
 #include <filesystem>
+#include <vector>
 
 
 struct ExecutionConfig {
-    std::string compileCommand;
-    std::string runCommand;
+    std::vector<std::string> BuildPipeline;
+    std::string RunCommand;
 };
 
 

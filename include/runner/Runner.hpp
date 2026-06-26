@@ -6,5 +6,4 @@
 class Runner {
 public:
     void Run(const ExecutionConfig& config);
-
 };
