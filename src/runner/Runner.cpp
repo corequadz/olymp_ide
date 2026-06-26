@@ -22,6 +22,7 @@ void Runner::Run(const ExecutionConfig &config, const std::filesystem::path &inp
     if (pid < 0)
     {
         std::perror("Runtime error");
+        return;
     }
     else if (pid == 0)
     {
