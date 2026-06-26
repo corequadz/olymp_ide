@@ -5,5 +5,5 @@
 
 class Runner {
 public:
-    void Run(const ExecutionConfig& config);
+    void Run(const ExecutionConfig& config, const std::filesystem::path& inputFile = {}, const std::filesystem::path& outputFile = {}, int timeLimitSeconds = 2);
 };

@@ -4,5 +4,5 @@
 
 class CppConnector : public LangConnector {
 public:
-    virtual ExecutionConfig prepare(const std::filesystem::path& sourcePath) override;
+    ExecutionConfig prepare(const std::filesystem::path& sourcePath) override;
 };
